@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⌨️ Автотайпер"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вставь текст:"
+        android:textColor="#CCCCCC"/>
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#1A1A1A"
+        android:textColor="#FFFFFF"
+        android:hint="Вставь текст..."
+        android:gravity="top"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скорость: 100 WPM"
+        android:textColor="#FFAA44"/>
+
+    <SeekBar
+        android:id="@+id/speedSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="370"
+        android:progress="70"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/delayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Задержка: 5 сек"
+        android:textColor="#FFAA44"/>
+
+    <SeekBar
+        android:id="@+id/delaySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="15"
+        android:progress="5"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="ЗАПУСТИТЬ"
+        android:background="#2E7D5E"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✅ Готов"
+        android:textColor="#8BC34A"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#1A1A1A"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
